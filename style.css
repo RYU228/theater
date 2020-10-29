@@ -1,0 +1,660 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.header_empty {
+  flex: 1 1 20%;
+}
+
+.header_logo {
+  font-size: 2em;
+  font-weight: bold;
+  flex: 1 1 60%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header_ul {
+  height: 53px;
+  display: flex;
+  flex: 1 1 20%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.header_ul li {
+  font-size: 10px;
+  list-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav_bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_bar_ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_bar_ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+marquee {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  height: 25px;
+}
+
+.slides {
+  width: 90%;
+  height: 60vh;
+  margin: 0 auto;
+  animation: fadeIn 0.8s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Btn {
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 30px;
+}
+
+.leftBtn {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  cursor: pointer;
+}
+
+.rightBtn {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.movies {
+  width: 30%;
+  height: 420px;
+  outline: none;
+}
+
+.movies img {
+  width: 90%;
+  height: 100%;
+}
+
+.movie_content {
+  width: 100%;
+}
+
+.movie_title {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.moive_info {
+  display: block;
+  text-align: center;
+}
+
+.info_heart {
+  cursor: pointer;
+  color: white;
+}
+
+.heart {
+  color: red;
+}
+
+.movie_book {
+  outline: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.book {
+  margin: 0 auto;
+  background-color: white;
+  width: 90%;
+  height: 100vh;
+}
+
+.book_title {
+  margin: 0 auto;
+  width: 16%;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 0px;
+  border-bottom: 2px solid black;
+}
+
+.book_info {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.book_poster {
+  margin-top: 35px;
+  width: 40%;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.poster_container {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+.book_slide {
+  width: 100%;
+  height: 100%;
+}
+
+.LBtn_div {
+  width: 15%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.RBtn_div:hover {
+  background: linear-gradient(to right, #ffffff00, white);
+}
+
+.RBtn_div {
+  width: 15%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.LBtn_div:hover {
+  background: linear-gradient(to left, #ffffff00, white);
+}
+
+.poster_LBtn,
+.poster_RBtn {
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.poster_LBtn {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 20px;
+}
+
+.poster_RBtn {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  font-size: 20px;
+}
+
+.poster_title {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.book_detail {
+  margin-top: 35px;
+  width: 35%;
+  height: 80%;
+  color: black;
+}
+
+.info_movie {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date_ul {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.date_ul li {
+  list-style: none;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.date_ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+.dateChoice {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.theater_info {
+  display: flex;
+  background-color: #fafafa;
+}
+
+.theater_area {
+  overflow: auto;
+  width: 30%;
+  height: 100%;
+}
+
+.theater_area {
+  background-color: #fafafa;
+}
+
+.theater_area li {
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.area_click {
+  background-color: #c7c7c7;
+  font-weight: bold;
+}
+
+.theater_location {
+  overflow: auto;
+  width: 70%;
+  height: 100%;
+  margin: 5px 0px;
+}
+
+.theater_location li {
+  list-style: none;
+}
+
+.location_ul {
+  background-color: #c7c7c7;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+
+.location_ul li {
+  cursor: pointer;
+}
+
+.location_click {
+  font-weight: bold;
+}
+
+.info_seats p {
+  background-color: gray;
+}
+
+.modalOpenBtn {
+  margin-top: 3px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid #c7c7c7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalOpenBtn:hover {
+  color: #fafafa;
+  background-color: red;
+}
+
+.summaryHidden {
+  display: none;
+}
+
+.payment_button {
+  margin-top: 3px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #c7c7c7;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.payment_button:hover {
+  color: #fafafa;
+  background-color: red;
+}
+
+.modal {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalHidden {
+  display: none;
+}
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal_window {
+  position: relative;
+  top: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  border-radius: 5px;
+  width: 70%;
+  height: 50%;
+}
+
+.modal_title p {
+  font-size: 20px;
+  color: gray;
+  padding: 5px 5px;
+  width: 50%;
+  display: inline;
+}
+
+.modal_title button {
+  all: unset;
+  background-color: white;
+  color: gray;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+}
+
+.modal_title {
+  border-bottom: 2px solid;
+  border-color: gray;
+  height: 35px;
+  align-items: center;
+}
+
+.modal_content {
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal_content p {
+  color: gray;
+  text-align: center;
+  width: 20%;
+  padding: 10px 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 20px auto;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.seatsDiv {
+  text-align: center;
+}
+
+.modal_content button:nth-child(4),
+.modal_content button:nth-child(10),
+.modal_content button:nth-child(18),
+.modal_content button:nth-child(24),
+.modal_content button:nth-child(32),
+.modal_content button:nth-child(38),
+.modal_content button:nth-child(46),
+.modal_content button:nth-child(52) {
+  margin-right: 30px;
+}
+
+.modal_content button {
+  outline: none;
+  background-color: none;
+  border: none;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  color: gray;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  margin: 5px 3px;
+}
+
+.modal_content button:hover {
+  background-color: red;
+  color: white;
+  border-color: white;
+}
+
+.modal_info {
+  display: flex;
+  justify-content: center;
+}
+
+.info_person,
+.info_seat {
+  color: gray;
+  font-size: 15px;
+  margin: 10px 10px;
+}
+
+.modal_okCancel {
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+  left: 50%;
+}
+
+.modal_okCancel .modal_ok {
+  margin-right: 30px;
+}
+
+.modal_okCancel button {
+  all: unset;
+  display: inline;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: gray;
+  color: gray;
+  cursor: pointer;
+  height: 22px;
+}
+
+.modal_okCancel button:hover {
+  background-color: #989191;
+  color: white;
+}
+
+/* ------- */
+.modal_check {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.modalCheckHidden {
+  display: none;
+}
+
+.modal_check_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal_check_window {
+  position: relative;
+  top: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  border-radius: 5px;
+  width: 30%;
+  height: max-content;
+}
+
+.check_title {
+  margin-top: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.check_title2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.check_manager {
+  margin: 30px 10px 0px 10px;
+  border-bottom: 4px double black;
+}
+
+.check_movie {
+  font-weight: bold;
+  font-size: 26px;
+  margin: 5px 0px;
+}
+
+.modal_check_content {
+  margin: 0px 10px;
+  border-bottom: 4px double black;
+}
+
+.check_bill {
+  margin: 5px 10px;
+  border-bottom: 2px dotted black;
+}
+
+.check_savePoint {
+  margin-bottom: 5px;
+}
+
+.check_event {
+  margin: 5px 10px;
+  border-bottom: 2px dotted black;
+}
+
+.event_title {
+  font-weight: bold;
+}
+
+.event_content {
+  margin-bottom: 5px;
+}
+
+.check_parking {
+  margin: 5px 10px;
+  border-bottom: 2px dotted black;
+}
+
+.parking_title {
+  font-weight: bold;
+}
+
+.parking_content {
+  margin-bottom: 5px;
+}
+
+.check_end {
+  margin: 5px 10px;
+}
+
+.check_button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+}

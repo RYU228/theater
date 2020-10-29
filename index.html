@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryu's Theater</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <span class="header_empty"></span>
+      <span class="header_logo">Ryu's Theater</span>
+      <ul class="header_ul">
+        <li>주의사항</li>
+        <li>로그인</li>
+      </ul>
+    </header>
+    <nav class="nav_bar">
+      <ul class="nav_bar_ul">
+        <li class="nav_bar_movie">영화</li>
+        <li class="nav_bar_book">예매</li>
+        <li class="nav_bar_theater">영화관</li>
+        <li class="nav_bar_event">이벤트</li>
+      </ul>
+    </nav>
+    <slider class="movie_soon">
+      <p>
+        <marquee
+          >COMMING SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee
+        >
+      </p>
+      <img src="images/horizon/police.jpg" alt="" class="slides" />
+      <img src="images/horizon/prison.jpg" alt="" class="slides" />
+      <img src="images/horizon/kid.jpg" alt="" class="slides" />
+      <img src="images/horizon/handicap.jpg" alt="" class="slides" />
+      <button class="leftBtn Btn"><i class="fas fa-angle-left"></i></button>
+      <button class="rightBtn Btn"><i class="fas fa-angle-right"></i></button>
+      <p>
+        <marquee
+          >COMMING SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMMING
+          SOON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee
+        >
+      </p>
+    </slider>
+    <div class="movie">
+      <div class="movies">
+        <img src="images/tenet.jpg" alt="" />
+        <div class="movie_content">
+          <span class="movie_title">1 테넷</span>
+          <span class="moive_info"
+            >예매율 45.3% | ⭐8.5 | <span class="info_heart">❤</span></span
+          >
+          <button class="movie_book" value="1">예매하기</button>
+        </div>
+      </div>
+      <div class="movies">
+        <img src="images/deliverusfromevil.jpg" alt="" />
+        <div class="movie_content">
+          <span class="movie_title">2 다만악에서 구하소서</span>
+          <span class="moive_info"
+            >예매율 40.3% | ⭐8.0 | <span class="info_heart">❤</span></span
+          >
+          <button class="movie_book" value="2">예매하기</button>
+        </div>
+      </div>
+      <div class="movies">
+        <img src="images/jjanggu.jpg" alt="" />
+        <div class="movie_content">
+          <span class="movie_title">3 짱구</span>
+          <span class="moive_info"
+            >예매율 30.3% | ⭐8.0 | <span class="info_heart">❤</span></span
+          >
+          <button class="movie_book" value="3">예매하기</button>
+        </div>
+      </div>
+      <div class="movies">
+        <img src="images/okmadam.jpg" alt="" />
+        <div class="movie_content">
+          <span class="movie_title">4 오케이 마담</span>
+          <span class="moive_info"
+            >예매율 25.3% | ⭐7.8 | <span class="info_heart">❤</span></span
+          >
+          <button class="movie_book" value="4">예매하기</button>
+        </div>
+      </div>
+      <div class="movies">
+        <img src="images/steelrain.jpg" alt="" />
+        <div class="movie_content">
+          <span class="movie_title">5 강철비2: 정상회담</span>
+          <span class="moive_info"
+            >예매율 20.3% | ⭐7.5 | <span class="info_heart">❤</span></span
+          >
+          <button class="movie_book" value="5">예매하기</button>
+        </div>
+      </div>
+      <div class="movies">
+        <img src="images/animation.jpg" alt="" />
+        <div class="movie_content">
+          <span class="movie_title">6 캐리비안해적과 마법다이아몬드</span>
+          <span class="moive_info"
+            >예매율 15.3% | ⭐7.3 | <span class="info_heart">❤</span></span
+          >
+          <button class="movie_book" value="6">예매하기</button>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="book">
+        <p class="book_title">영 화 예 매</p>
+        <div class="book_info">
+          <div class="book_poster">
+            <div class="poster_container">
+              <img
+                src="images/tenet.jpg"
+                alt=""
+                value="테넷"
+                class="book_slide movie1"
+              />
+              <img
+                src="images/deliverusfromevil.jpg"
+                alt=""
+                value="다만 악에서 구하소서"
+                class="book_slide movie2"
+              />
+              <img
+                src="images/jjanggu.jpg"
+                alt=""
+                value="짱구"
+                class="book_slide movie3"
+              />
+              <img
+                src="images/okmadam.jpg"
+                alt=""
+                value="오케이 마담"
+                class="book_slide movie4"
+              />
+              <img
+                src="images/steelrain.jpg"
+                alt=""
+                value="강철비2"
+                class="book_slide movie5"
+              />
+              <img
+                src="images/animation.jpg"
+                alt=""
+                value="캐리비안의 해적과 마법다이아몬드"
+                class="book_slide movie6"
+              />
+              <div class="LBtn_div">
+                <button class="poster_LBtn">
+                  <i class="fas fa-angle-left"></i>
+                </button>
+              </div>
+              <div class="RBtn_div">
+                <button class="poster_RBtn">
+                  <i class="fas fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+            <p class="poster_title"></p>
+          </div>
+          <div class="book_detail">
+            <div>
+              <p class="info_movie"></p>
+              <div class="info_date">
+                <ul class="date_ul"></ul>
+              </div>
+              <div class="info_theater">
+                <div class="theater_info">
+                  <div class="theater_area">
+                    <ul>
+                      <li class="area_li" value="seoul">서울</li>
+                      <li class="area_li" value="gyunggi">경기/인천</li>
+                      <li class="area_li" value="chung">충청/대전</li>
+                      <li class="area_li" value="jeon">전라/광주</li>
+                      <li class="area_li" value="deagu">경북/대구</li>
+                      <li class="area_li" value="busan">경남/부산/울산</li>
+                      <li class="area_li" value="gang">강원</li>
+                      <li class="area_li" value="jeju">제주</li>
+                    </ul>
+                  </div>
+                  <div class="theater_location">
+                    <ul class="location_ul"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info_seats">
+                <button class="modalOpenBtn">
+                  좌&nbsp;&nbsp;석&nbsp;&nbsp;선&nbsp;&nbsp;택
+                </button>
+              </div>
+              <div class="summary summaryHidden">
+                <p class="summary_title"></p>
+                <p class="summary_date"></p>
+                <p class="summary_location"></p>
+                <p class="summary_seats"></p>
+                <button class="payment_button">
+                  결&nbsp;&nbsp;제&nbsp;&nbsp;하&nbsp;&nbsp;기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modalHidden">
+        <div class="modal_overlay"></div>
+        <div class="modal_window">
+          <div class="modal_title">
+            <p>좌석선택</p>
+            <button class="modal_closeBtn">X</button>
+          </div>
+
+          <div class="modal_content">
+            <p>S C R E E N</p>
+          </div>
+          <div class="modal_info">
+            <span class="info_person">인원 : </span>
+            <span class="info_seat">좌석 : </span>
+          </div>
+          <div class="modal_okCancel">
+            <button class="modal_ok">확 인</button>
+            <button class="modal_cancel">취 소</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal_check modalCheckHidden">
+        <div class="modal_check_overlay"></div>
+        <div class="modal_check_window">
+          <p class="check_title">영화입장권</p>
+          <p class="check_title2">(영수증 겸용)</p>
+          <p class="check_manager">시간 담당자</p>
+          <div class="modal_check_content">
+            <p class="check_movie">타이틀</p>
+            <p class="check_time">날짜 영화시간</p>
+            <p class="check_seats">좌석위치</p>
+          </div>
+          <div class="check_bill">
+            <p class="check_price">영화 10,000원 (성인 1명)</p>
+            <p class="check_total">토탈 10000원 (vat)</p>
+            <p class="check_payment">카드 10000원</p>
+            <p class="check_havePoint">가용포인트 : 1,113 점</p>
+            <p class="check_savePoint">적립포인트 : 200 점</p>
+          </div>
+          <div class="check_event">
+            <p class="event_title">이벤트</p>
+            <p class="event_content">
+              2인이상 영수증 소지 후 매장 방문 시 팝콘 사이즈 업
+            </p>
+          </div>
+          <div class="check_parking">
+            <p class="parking_title">주차안내</p>
+            <p class="parking_content">
+              영수증 소지 시 3시간 무료주차 이용 가능합니다.
+            </p>
+          </div>
+          <div class="check_end">
+            <p>즐거운 관람 되십시오.</p>
+          </div>
+          <button class="check_button">X</button>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="slide.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="book_poster.js"></script>
+    <script src="book_detail.js"></script>
+    <script src="modal_seat.js"></script>
+    <script src="check.js"></script>
+  </body>
+</html>
